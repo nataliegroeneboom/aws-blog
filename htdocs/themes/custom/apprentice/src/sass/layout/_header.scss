@@ -1,0 +1,160 @@
+
+
+
+
+.top-header{
+  height: 400px;
+  @include phone{
+    height: 270px;
+    position: relative;
+  }
+
+  .header{
+    @extend %clearfix;
+    width: 100%;
+       @include phone{
+         &.responsive{
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           z-index: 1;
+           height: 160px;
+           background-color: #fff;
+         }
+       }
+
+
+ .main-menu, .slogan{
+
+      list-style-type: none;
+      text-align: center;
+
+        li{
+          padding: 5px 12px 5px 0px;
+          a{
+            color: $black;
+          }
+        }
+
+    }
+
+
+
+
+
+
+  section.block-system-branding-block{
+  display: inline-block;
+  float: left;
+  }
+
+  #block-apprentice-main-menu{
+  display: inline-block;
+  float: right;
+  }
+
+
+    .main-menu, .slogan{
+    //  width:: 100%;
+   //  display: inline-block;
+
+          li{
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+          }
+          .icon{
+            display: none;
+          }
+    }
+
+.print{
+  display: none;
+}
+
+@include phone{
+  .navbar{
+
+    width: 150px;
+    li{
+      width: auto;
+      a{
+        font-size: 22px;
+      }
+    }
+
+
+#block-apprentice-main-menu{
+  display: relative;
+
+}
+    .main-menu{
+      position: relative;
+
+                 .menu-item{
+                   &:not(:first-child) {display: none;}
+                 }
+                 .icon{
+                   float: right;
+                   display: block;
+                   padding-right: 15px;
+
+
+                 }
+                 &.responsive{
+                   position: absolute;
+                   right: 30px;
+                   top: 0;
+                   background-color: #fff;
+                   z-index: 2;
+                   .menu-item{
+                     float: none;
+                     display: block;
+
+                   }
+                   .icon a{
+                    position: absolute;
+                     top: 5px;
+                     right: -10px;
+                   }
+
+                 }// end of responsive
+         }//end of menu item
+
+
+
+
+
+  }// end of navbar class
+
+  .slogan{
+    padding-left: 0px;
+    li{
+
+      width: 120px;
+      a{
+       font-size: 22px;
+     }
+
+    }
+
+
+  }
+
+}// end of mobile view
+
+
+
+
+}//end of header
+
+
+  .banner{
+    width: 100%;
+    height: 200px;
+    @include phone{
+      height: 300px;
+    }
+  }
+  }

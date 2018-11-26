@@ -1,0 +1,31 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  //padding-top: 79px;
+  background-color: $cream;
+  font-family: $stack-sans-serif;
+  overflow-x: hidden;
+  border: 12px solid black;
+ @include phone{
+   border: none;
+   padding-top: none;
+ }
+}
+.container-fluid{
+  @include phone{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+.container{
+  @include desktop{
+    width: 1000px;
+  }
+}
+
+li.print{
+  display: none;
+}

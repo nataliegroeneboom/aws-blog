@@ -1,0 +1,47 @@
+
+
+
+.side{
+
+	//	background-color: $cream;
+
+
+}
+
+.side, .intro{
+	display: block;
+}
+
+
+	@include phone {
+
+		.intro{
+	display: inline-block;
+	vertical-align: top;
+//	padding: 0 18px;
+
+			}
+
+
+
+		.intro{
+	color: $black;
+		}
+
+
+	}
+
+
+
+
+#block-mynameisnatalieandiamawebdeveloperapprentice{
+
+				.group-left{
+				 width: $width-into-left-desktop;
+				}
+
+				.group-right{
+				  width: $width-intro-right-desktop;
+				}
+
+}
